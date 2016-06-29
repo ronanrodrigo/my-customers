@@ -14,6 +14,8 @@
 		34E16DC61D249250007257A4 /* MyCustomersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; };
 		34E16DD11D249250007257A4 /* MyCustomersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; };
 		34E16DD21D249250007257A4 /* MyCustomersCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34E16DDD1D249409007257A4 /* SaveCustomerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */; };
+		67A95C7A1DBACFB6C508360A /* SaveCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		34E16DC01D249250007257A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E16DC51D249250007257A4 /* MyCustomersCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCustomersCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E16DCE1D249250007257A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveCustomerViewController.xib; sourceTree = "<group>"; };
+		67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveCustomerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 		34C095681D248D8A00A01D06 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				349062951D248D5D00F74168 /* LaunchScreen.storyboard */,
+				34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 			files = (
 				349062971D248D5D00F74168 /* LaunchScreen.storyboard in Resources */,
 				349062941D248D5D00F74168 /* Assets.xcassets in Resources */,
+				34E16DDD1D249409007257A4 /* SaveCustomerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3490628D1D248D5D00F74168 /* AppDelegate.swift in Sources */,
+				67A95C7A1DBACFB6C508360A /* SaveCustomerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
