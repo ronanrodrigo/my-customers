@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SaveCustomerViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SaveCustomerViewController" customModule="MyCustomers" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -13,7 +14,40 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5BD-bc-7R9" customClass="BorderedView" customModule="MyCustomers" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IYn-uv-sKT">
+                            <rect key="frame" x="8" y="0.0" width="592" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="IYn-uv-sKT" firstAttribute="top" secondItem="5BD-bc-7R9" secondAttribute="top" id="53i-AJ-CaF"/>
+                        <constraint firstAttribute="trailing" secondItem="IYn-uv-sKT" secondAttribute="trailing" id="O1I-gB-vbh"/>
+                        <constraint firstAttribute="height" constant="50" id="P70-iB-PL4"/>
+                        <constraint firstAttribute="bottom" secondItem="IYn-uv-sKT" secondAttribute="bottom" id="QqC-K5-TTr"/>
+                        <constraint firstItem="IYn-uv-sKT" firstAttribute="leading" secondItem="5BD-bc-7R9" secondAttribute="leading" constant="8" id="qkR-Lk-5Jh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.82580888269999997" green="0.8265900612" blue="0.8258998394" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5BD-bc-7R9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ALG-qA-2Mn"/>
+                <constraint firstItem="5BD-bc-7R9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RqW-gz-nsb"/>
+                <constraint firstAttribute="trailing" secondItem="5BD-bc-7R9" secondAttribute="trailing" id="Wor-yK-GFk"/>
+            </constraints>
         </view>
     </objects>
 </document>
