@@ -9,6 +9,9 @@ class ListCustomersViewController: UIViewController {
     // MARK: Properties
 
     var customersDataSource: ListCustomersDataSource?
+
+    // MARK: UIView
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureDataSource()
