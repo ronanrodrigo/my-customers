@@ -2,6 +2,10 @@ import UIKit
 
 class ListCustomersViewController: UIViewController {
 
+    // MARK: Outlets
+
+    @IBOutlet weak var tableView: UITableView!
+
     // MARK: Properties
 
     var customersDataSource: ListCustomersDataSource?
