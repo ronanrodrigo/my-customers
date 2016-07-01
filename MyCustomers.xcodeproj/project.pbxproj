@@ -19,6 +19,7 @@
 		34E16DDD1D249409007257A4 /* SaveCustomerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */; };
 		67A95B171C7DCA7984DCE874 /* ListCustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954D120993A199502CE7D /* ListCustomersViewController.swift */; };
 		67A95C7A1DBACFB6C508360A /* SaveCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */; };
+		67A95E228FA3D95B694356F8 /* ListCustomersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A956534DF145C20CE06269 /* ListCustomersDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveCustomerViewController.xib; sourceTree = "<group>"; };
 		67A954D120993A199502CE7D /* ListCustomersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersViewController.swift; sourceTree = "<group>"; };
 		67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveCustomerViewController.swift; sourceTree = "<group>"; };
+		67A956534DF145C20CE06269 /* ListCustomersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */,
 				67A954D120993A199502CE7D /* ListCustomersViewController.swift */,
+				67A956534DF145C20CE06269 /* ListCustomersDataSource.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				345A75431D25B9FB0060BFE9 /* BorderedView.swift in Sources */,
 				67A95C7A1DBACFB6C508360A /* SaveCustomerViewController.swift in Sources */,
 				67A95B171C7DCA7984DCE874 /* ListCustomersViewController.swift in Sources */,
+				67A95E228FA3D95B694356F8 /* ListCustomersDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
