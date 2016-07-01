@@ -11,9 +11,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.makeKeyAndVisible()
 
         if let _window = window {
-            let saveCustomerViewController = SaveCustomerViewController()
+            let listCustomersViewController = ListCustomersViewController()
             let navigationController = UINavigationController()
-            navigationController.viewControllers = [saveCustomerViewController]
+            navigationController.viewControllers = [listCustomersViewController]
             _window.rootViewController = navigationController
             _window.makeKeyAndVisible()
         }
