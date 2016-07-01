@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SaveCustomerViewController" customModule="MyCustomers" customModuleProvider="target">
             <connections>
+                <outlet property="topPosition" destination="aas-9t-oee" id="pD1-Ya-25f"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,11 +16,28 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ym-uW-guF" customClass="BorderedView" customModule="MyCustomers" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="t53-9Q-ZDt"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.82580888269999997" green="0.8265900612" blue="0.8258998394" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderMargin">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5BD-bc-7R9" customClass="BorderedView" customModule="MyCustomers" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                    <rect key="frame" x="0.0" y="20" width="600" height="50"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IYn-uv-sKT">
-                            <rect key="frame" x="8" y="0.0" width="592" height="50"/>
+                            <rect key="frame" x="15" y="0.0" width="570" height="50"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
@@ -27,10 +45,10 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="IYn-uv-sKT" firstAttribute="top" secondItem="5BD-bc-7R9" secondAttribute="top" id="53i-AJ-CaF"/>
-                        <constraint firstAttribute="trailing" secondItem="IYn-uv-sKT" secondAttribute="trailing" id="O1I-gB-vbh"/>
+                        <constraint firstAttribute="trailing" secondItem="IYn-uv-sKT" secondAttribute="trailing" constant="15" id="O1I-gB-vbh"/>
                         <constraint firstAttribute="height" constant="50" id="P70-iB-PL4"/>
                         <constraint firstAttribute="bottom" secondItem="IYn-uv-sKT" secondAttribute="bottom" id="QqC-K5-TTr"/>
-                        <constraint firstItem="IYn-uv-sKT" firstAttribute="leading" secondItem="5BD-bc-7R9" secondAttribute="leading" constant="8" id="qkR-Lk-5Jh"/>
+                        <constraint firstItem="IYn-uv-sKT" firstAttribute="leading" secondItem="5BD-bc-7R9" secondAttribute="leading" constant="15" id="qkR-Lk-5Jh"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -41,13 +59,113 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffv-G4-JAw" customClass="BorderedView" customModule="MyCustomers" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="70" width="600" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLW-Lk-OWS">
+                            <rect key="frame" x="15" y="0.0" width="570" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="nLW-Lk-OWS" firstAttribute="leading" secondItem="ffv-G4-JAw" secondAttribute="leading" constant="15" id="Edv-SP-szW"/>
+                        <constraint firstAttribute="trailing" secondItem="nLW-Lk-OWS" secondAttribute="trailing" constant="15" id="gqR-g7-7m2"/>
+                        <constraint firstAttribute="bottom" secondItem="nLW-Lk-OWS" secondAttribute="bottom" id="sw1-px-Rq5"/>
+                        <constraint firstAttribute="height" constant="50" id="yps-Ey-ZX8"/>
+                        <constraint firstItem="nLW-Lk-OWS" firstAttribute="top" secondItem="ffv-G4-JAw" secondAttribute="top" id="yrc-vQ-btg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.82580888269999997" green="0.8265900612" blue="0.8258998394" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAq-we-kTV" customClass="BorderedView" customModule="MyCustomers" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="120" width="600" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d8u-EI-70W">
+                            <rect key="frame" x="15" y="0.0" width="570" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="d8u-EI-70W" secondAttribute="bottom" id="1Xw-UJ-qM2"/>
+                        <constraint firstItem="d8u-EI-70W" firstAttribute="top" secondItem="IAq-we-kTV" secondAttribute="top" id="BoG-Hl-jgH"/>
+                        <constraint firstAttribute="trailing" secondItem="d8u-EI-70W" secondAttribute="trailing" constant="15" id="DbW-SV-dRl"/>
+                        <constraint firstAttribute="height" constant="50" id="aHl-Gg-qgj"/>
+                        <constraint firstItem="d8u-EI-70W" firstAttribute="leading" secondItem="IAq-we-kTV" secondAttribute="leading" constant="15" id="wEY-xl-Y1F"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.82580888269999997" green="0.8265900612" blue="0.8258998394" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVT-cp-Tdv" customClass="BorderedView" customModule="MyCustomers" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="170" width="600" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gud-Mo-5p9">
+                            <rect key="frame" x="15" y="0.0" width="570" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3nm-W8-XcM"/>
+                        <constraint firstItem="gud-Mo-5p9" firstAttribute="top" secondItem="mVT-cp-Tdv" secondAttribute="top" id="Am5-JP-vfO"/>
+                        <constraint firstAttribute="trailing" secondItem="gud-Mo-5p9" secondAttribute="trailing" constant="15" id="VtG-65-bgN"/>
+                        <constraint firstAttribute="bottom" secondItem="gud-Mo-5p9" secondAttribute="bottom" id="cN4-Sc-b9l"/>
+                        <constraint firstItem="gud-Mo-5p9" firstAttribute="leading" secondItem="mVT-cp-Tdv" secondAttribute="leading" constant="15" id="oA1-Se-tfF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.82580888269999997" green="0.8265900612" blue="0.8258998394" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderMargin">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="IAq-we-kTV" secondAttribute="trailing" id="2H3-MF-JFk"/>
+                <constraint firstItem="mVT-cp-Tdv" firstAttribute="top" secondItem="IAq-we-kTV" secondAttribute="bottom" id="5Yn-Ze-eOW"/>
+                <constraint firstItem="ffv-G4-JAw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8LZ-1H-HZS"/>
                 <constraint firstItem="5BD-bc-7R9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ALG-qA-2Mn"/>
+                <constraint firstItem="5BD-bc-7R9" firstAttribute="top" secondItem="9Ym-uW-guF" secondAttribute="bottom" id="Bu9-5i-BgC"/>
                 <constraint firstItem="5BD-bc-7R9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RqW-gz-nsb"/>
                 <constraint firstAttribute="trailing" secondItem="5BD-bc-7R9" secondAttribute="trailing" id="Wor-yK-GFk"/>
+                <constraint firstItem="9Ym-uW-guF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XRp-T5-OxD"/>
+                <constraint firstAttribute="trailing" secondItem="mVT-cp-Tdv" secondAttribute="trailing" id="aBA-Hx-xOJ"/>
+                <constraint firstItem="9Ym-uW-guF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aas-9t-oee"/>
+                <constraint firstItem="mVT-cp-Tdv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c87-zu-mYR"/>
+                <constraint firstAttribute="trailing" secondItem="ffv-G4-JAw" secondAttribute="trailing" id="ceU-y3-ym2"/>
+                <constraint firstItem="IAq-we-kTV" firstAttribute="top" secondItem="ffv-G4-JAw" secondAttribute="bottom" id="eJx-wO-n4O"/>
+                <constraint firstItem="ffv-G4-JAw" firstAttribute="top" secondItem="5BD-bc-7R9" secondAttribute="bottom" id="qeM-go-yh8"/>
+                <constraint firstAttribute="trailing" secondItem="9Ym-uW-guF" secondAttribute="trailing" id="sJ2-Up-R7w"/>
+                <constraint firstItem="IAq-we-kTV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ua1-KS-R09"/>
             </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="RqW-gz-nsb"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

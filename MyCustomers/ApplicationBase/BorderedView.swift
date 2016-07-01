@@ -15,6 +15,12 @@ import QuartzCore
         }
     }
 
+    @IBInspectable var borderMargin: CGFloat = 10 {
+        didSet {
+            configureView()
+        }
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureView()
@@ -27,20 +33,20 @@ import QuartzCore
 
     private func configureView() {
         let borderBottom = UIView()
-        self.addSubview(borderBottom)
+        addSubview(borderBottom)
 
-        borderBottom.backgroundColor = borderColor  
+        borderBottom.backgroundColor = borderColor
 
         let borderViewLeading = NSLayoutConstraint(
-            item: borderBottom, attribute: .Leading, relatedBy: .Equal, toItem: self, attribute: .Leading, multiplier: 1, constant: 0)
+            item: borderBottom, attribute: .Leading, relatedBy: .Equal, toItem: self, attribute: .Leading, multiplier: 1, constant: borderMargin)
         let borderViewTrailing = NSLayoutConstraint(
             item: borderBottom, attribute: .Trailing, relatedBy: .Equal, toItem: self, attribute: .Trailing, multiplier: 1, constant: 0)
         let borderViewHeight = NSLayoutConstraint(
-            item: borderBottom, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: borderWidth)
+            item: borderBottom, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: borderWidth/2)
         let borderViewBottom = NSLayoutConstraint(
             item: borderBottom, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1, constant: 0)
 
-        self.addConstraints([borderViewLeading, borderViewTrailing, borderViewHeight, borderViewBottom])
+        addConstraints([borderViewLeading, borderViewTrailing, borderViewHeight, borderViewBottom])
         borderBottom.translatesAutoresizingMaskIntoConstraints = false
 
         setNeedsDisplay()
