@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3402EFA11D26CA070026C2B9 /* ListCustomersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3402EF9F1D26CA070026C2B9 /* ListCustomersViewController.xib */; };
 		345A75431D25B9FB0060BFE9 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345A75421D25B9FB0060BFE9 /* BorderedView.swift */; };
 		3490628D1D248D5D00F74168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490628C1D248D5D00F74168 /* AppDelegate.swift */; };
 		349062941D248D5D00F74168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349062931D248D5D00F74168 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 		34E16DD11D249250007257A4 /* MyCustomersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; };
 		34E16DD21D249250007257A4 /* MyCustomersCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34E16DDD1D249409007257A4 /* SaveCustomerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */; };
+		67A95B171C7DCA7984DCE874 /* ListCustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954D120993A199502CE7D /* ListCustomersViewController.swift */; };
 		67A95C7A1DBACFB6C508360A /* SaveCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3402EF9F1D26CA070026C2B9 /* ListCustomersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCustomersViewController.xib; sourceTree = "<group>"; };
 		345A75421D25B9FB0060BFE9 /* BorderedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
 		349062891D248D5D00F74168 /* MyCustomers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCustomers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3490628C1D248D5D00F74168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 		34E16DC51D249250007257A4 /* MyCustomersCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCustomersCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E16DCE1D249250007257A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveCustomerViewController.xib; sourceTree = "<group>"; };
+		67A954D120993A199502CE7D /* ListCustomersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersViewController.swift; sourceTree = "<group>"; };
 		67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveCustomerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */,
+				67A954D120993A199502CE7D /* ListCustomersViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			children = (
 				349062951D248D5D00F74168 /* LaunchScreen.storyboard */,
 				34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */,
+				3402EF9F1D26CA070026C2B9 /* ListCustomersViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3402EFA11D26CA070026C2B9 /* ListCustomersViewController.xib in Resources */,
 				349062971D248D5D00F74168 /* LaunchScreen.storyboard in Resources */,
 				349062941D248D5D00F74168 /* Assets.xcassets in Resources */,
 				34E16DDD1D249409007257A4 /* SaveCustomerViewController.xib in Resources */,
@@ -322,6 +329,7 @@
 				3490628D1D248D5D00F74168 /* AppDelegate.swift in Sources */,
 				345A75431D25B9FB0060BFE9 /* BorderedView.swift in Sources */,
 				67A95C7A1DBACFB6C508360A /* SaveCustomerViewController.swift in Sources */,
+				67A95B171C7DCA7984DCE874 /* ListCustomersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
