@@ -37,7 +37,7 @@
                     <rect key="frame" x="0.0" y="20" width="600" height="50"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IYn-uv-sKT">
-                            <rect key="frame" x="15" y="0.0" width="570" height="50"/>
+                            <rect key="frame" x="10" y="0.0" width="575" height="50"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
@@ -48,7 +48,7 @@
                         <constraint firstAttribute="trailing" secondItem="IYn-uv-sKT" secondAttribute="trailing" constant="15" id="O1I-gB-vbh"/>
                         <constraint firstAttribute="height" constant="50" id="P70-iB-PL4"/>
                         <constraint firstAttribute="bottom" secondItem="IYn-uv-sKT" secondAttribute="bottom" id="QqC-K5-TTr"/>
-                        <constraint firstItem="IYn-uv-sKT" firstAttribute="leading" secondItem="5BD-bc-7R9" secondAttribute="leading" constant="15" id="qkR-Lk-5Jh"/>
+                        <constraint firstItem="IYn-uv-sKT" firstAttribute="leading" secondItem="5BD-bc-7R9" secondAttribute="leading" constant="10" id="qkR-Lk-5Jh"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -63,14 +63,14 @@
                     <rect key="frame" x="0.0" y="70" width="600" height="50"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLW-Lk-OWS">
-                            <rect key="frame" x="15" y="0.0" width="570" height="50"/>
+                            <rect key="frame" x="10" y="0.0" width="575" height="50"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="nLW-Lk-OWS" firstAttribute="leading" secondItem="ffv-G4-JAw" secondAttribute="leading" constant="15" id="Edv-SP-szW"/>
+                        <constraint firstItem="nLW-Lk-OWS" firstAttribute="leading" secondItem="ffv-G4-JAw" secondAttribute="leading" constant="10" id="Edv-SP-szW"/>
                         <constraint firstAttribute="trailing" secondItem="nLW-Lk-OWS" secondAttribute="trailing" constant="15" id="gqR-g7-7m2"/>
                         <constraint firstAttribute="bottom" secondItem="nLW-Lk-OWS" secondAttribute="bottom" id="sw1-px-Rq5"/>
                         <constraint firstAttribute="height" constant="50" id="yps-Ey-ZX8"/>
@@ -89,7 +89,7 @@
                     <rect key="frame" x="0.0" y="120" width="600" height="50"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d8u-EI-70W">
-                            <rect key="frame" x="15" y="0.0" width="570" height="50"/>
+                            <rect key="frame" x="10" y="0.0" width="575" height="50"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                         </textField>
@@ -100,7 +100,7 @@
                         <constraint firstItem="d8u-EI-70W" firstAttribute="top" secondItem="IAq-we-kTV" secondAttribute="top" id="BoG-Hl-jgH"/>
                         <constraint firstAttribute="trailing" secondItem="d8u-EI-70W" secondAttribute="trailing" constant="15" id="DbW-SV-dRl"/>
                         <constraint firstAttribute="height" constant="50" id="aHl-Gg-qgj"/>
-                        <constraint firstItem="d8u-EI-70W" firstAttribute="leading" secondItem="IAq-we-kTV" secondAttribute="leading" constant="15" id="wEY-xl-Y1F"/>
+                        <constraint firstItem="d8u-EI-70W" firstAttribute="leading" secondItem="IAq-we-kTV" secondAttribute="leading" constant="10" id="wEY-xl-Y1F"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -115,7 +115,7 @@
                     <rect key="frame" x="0.0" y="170" width="600" height="50"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gud-Mo-5p9">
-                            <rect key="frame" x="15" y="0.0" width="570" height="50"/>
+                            <rect key="frame" x="10" y="0.0" width="575" height="50"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
@@ -126,7 +126,7 @@
                         <constraint firstItem="gud-Mo-5p9" firstAttribute="top" secondItem="mVT-cp-Tdv" secondAttribute="top" id="Am5-JP-vfO"/>
                         <constraint firstAttribute="trailing" secondItem="gud-Mo-5p9" secondAttribute="trailing" constant="15" id="VtG-65-bgN"/>
                         <constraint firstAttribute="bottom" secondItem="gud-Mo-5p9" secondAttribute="bottom" id="cN4-Sc-b9l"/>
-                        <constraint firstItem="gud-Mo-5p9" firstAttribute="leading" secondItem="mVT-cp-Tdv" secondAttribute="leading" constant="15" id="oA1-Se-tfF"/>
+                        <constraint firstItem="gud-Mo-5p9" firstAttribute="leading" secondItem="mVT-cp-Tdv" secondAttribute="leading" constant="10" id="oA1-Se-tfF"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
