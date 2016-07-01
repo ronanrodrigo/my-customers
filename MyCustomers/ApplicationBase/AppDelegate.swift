@@ -7,15 +7,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window!.backgroundColor = UIColor.whiteColor()
-        self.window!.makeKeyAndVisible()
 
-        if let _window = window {
+        if let window = window {
             let listCustomersViewController = ListCustomersViewController()
             let navigationController = UINavigationController()
             navigationController.viewControllers = [listCustomersViewController]
-            _window.rootViewController = navigationController
-            _window.makeKeyAndVisible()
+            window.rootViewController = navigationController
+            window.backgroundColor = UIColor.whiteColor()
+            window.tintColor = UIColor.primary
+            window.makeKeyAndVisible()
         }
 
         return true

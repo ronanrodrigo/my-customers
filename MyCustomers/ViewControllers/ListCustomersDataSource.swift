@@ -3,7 +3,7 @@ import UIKit
 
 class ListCustomersDataSource: NSObject, UITableViewDataSource {
 
-    let customers = []
+    let customers: [String] = []
     let cellIdentifier = "CustomerCell"
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
