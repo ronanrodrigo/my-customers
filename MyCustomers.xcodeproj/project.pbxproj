@@ -17,9 +17,21 @@
 		34E16DD11D249250007257A4 /* MyCustomersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; };
 		34E16DD21D249250007257A4 /* MyCustomersCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34E16DDD1D249409007257A4 /* SaveCustomerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */; };
+		67A951A49FFBFD6A99A6BB8D /* ListCustomersOutputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A958FFB7631AA70545C729 /* ListCustomersOutputPresenter.swift */; };
+		67A951E0B1E4929710220B38 /* CustomersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A959EDF195242A7C0B2185 /* CustomersRouter.swift */; };
+		67A951EFFAA56529B047947B /* CustomerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A955086D0690D95F245B0C /* CustomerEntity.swift */; };
+		67A95288ACA618F58E701018 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A9510DB85F5747A95EB2B0 /* Customer.swift */; };
+		67A95761BBC7363E2B186A67 /* CustomerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A955086D0690D95F245B0C /* CustomerEntity.swift */; };
+		67A957D16759334F4C3A18D6 /* ListCustomersOutputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A958FFB7631AA70545C729 /* ListCustomersOutputPresenter.swift */; };
 		67A95B171C7DCA7984DCE874 /* ListCustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954D120993A199502CE7D /* ListCustomersViewController.swift */; };
+		67A95B64254BD69039ACD00E /* ListCustomersInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A958865E5FDD98422B16B9 /* ListCustomersInputPresenter.swift */; };
+		67A95BFDD30E14963CC1A03E /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A9510DB85F5747A95EB2B0 /* Customer.swift */; };
 		67A95C7A1DBACFB6C508360A /* SaveCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */; };
+		67A95DFA5DAE45AF395876BB /* CustomersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A959EDF195242A7C0B2185 /* CustomersRouter.swift */; };
 		67A95E228FA3D95B694356F8 /* ListCustomersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A956534DF145C20CE06269 /* ListCustomersDataSource.swift */; };
+		67A95E5948ACEBDF694BE952 /* ListCustomersInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A958865E5FDD98422B16B9 /* ListCustomersInputPresenter.swift */; };
+		67A95F43A1541AF26EDE5211 /* ListCustomersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954E6E317C55589626662 /* ListCustomersInteractor.swift */; };
+		67A95FC35ABF9246AD56EFB0 /* ListCustomersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954E6E317C55589626662 /* ListCustomersInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,9 +86,15 @@
 		34E16DC51D249250007257A4 /* MyCustomersCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCustomersCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E16DCE1D249250007257A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveCustomerViewController.xib; sourceTree = "<group>"; };
+		67A9510DB85F5747A95EB2B0 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		67A954D120993A199502CE7D /* ListCustomersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersViewController.swift; sourceTree = "<group>"; };
+		67A954E6E317C55589626662 /* ListCustomersInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersInteractor.swift; sourceTree = "<group>"; };
 		67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveCustomerViewController.swift; sourceTree = "<group>"; };
+		67A955086D0690D95F245B0C /* CustomerEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerEntity.swift; sourceTree = "<group>"; };
 		67A956534DF145C20CE06269 /* ListCustomersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersDataSource.swift; sourceTree = "<group>"; };
+		67A958865E5FDD98422B16B9 /* ListCustomersInputPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersInputPresenter.swift; sourceTree = "<group>"; };
+		67A958FFB7631AA70545C729 /* ListCustomersOutputPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersOutputPresenter.swift; sourceTree = "<group>"; };
+		67A959EDF195242A7C0B2185 /* CustomersRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +190,11 @@
 			children = (
 				34E16DBE1D249250007257A4 /* MyCustomersCore.h */,
 				34E16DC01D249250007257A4 /* Info.plist */,
+				67A95C5C354BFD05C03B1BBF /* ValueObjects */,
+				67A95C97E8D0FA13A883CF8B /* Entities */,
+				67A951B556DCE83D81EA7C4B /* Interactors */,
+				67A95199391194057036B577 /* Presenters */,
+				67A951D34D27A313477761DD /* Routers */,
 			);
 			path = MyCustomersCore;
 			sourceTree = "<group>";
@@ -182,6 +205,47 @@
 				34E16DCE1D249250007257A4 /* Info.plist */,
 			);
 			path = MyCustomersCoreTests;
+			sourceTree = "<group>";
+		};
+		67A95199391194057036B577 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				67A958FFB7631AA70545C729 /* ListCustomersOutputPresenter.swift */,
+				67A958865E5FDD98422B16B9 /* ListCustomersInputPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		67A951B556DCE83D81EA7C4B /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				67A954E6E317C55589626662 /* ListCustomersInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		67A951D34D27A313477761DD /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				67A959EDF195242A7C0B2185 /* CustomersRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		67A95C5C354BFD05C03B1BBF /* ValueObjects */ = {
+			isa = PBXGroup;
+			children = (
+				67A9510DB85F5747A95EB2B0 /* Customer.swift */,
+			);
+			path = ValueObjects;
+			sourceTree = "<group>";
+		};
+		67A95C97E8D0FA13A883CF8B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				67A955086D0690D95F245B0C /* CustomerEntity.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +405,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A95288ACA618F58E701018 /* Customer.swift in Sources */,
+				67A951EFFAA56529B047947B /* CustomerEntity.swift in Sources */,
+				67A95FC35ABF9246AD56EFB0 /* ListCustomersInteractor.swift in Sources */,
+				67A951A49FFBFD6A99A6BB8D /* ListCustomersOutputPresenter.swift in Sources */,
+				67A95E5948ACEBDF694BE952 /* ListCustomersInputPresenter.swift in Sources */,
+				67A95DFA5DAE45AF395876BB /* CustomersRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +418,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A95BFDD30E14963CC1A03E /* Customer.swift in Sources */,
+				67A95761BBC7363E2B186A67 /* CustomerEntity.swift in Sources */,
+				67A95F43A1541AF26EDE5211 /* ListCustomersInteractor.swift in Sources */,
+				67A957D16759334F4C3A18D6 /* ListCustomersOutputPresenter.swift in Sources */,
+				67A95B64254BD69039ACD00E /* ListCustomersInputPresenter.swift in Sources */,
+				67A951E0B1E4929710220B38 /* CustomersRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
