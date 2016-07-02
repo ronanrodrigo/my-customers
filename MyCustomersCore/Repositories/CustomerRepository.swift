@@ -4,7 +4,7 @@ public protocol CustomerRepository {
     func all() -> [Customer]
 }
 
-struct CustomerRepositoryInMemory: CustomerRepository {
+public class CustomerRepositoryInMemory: CustomerRepository {
 
     var customers: [Customer] {
         let customer = CustomerEntity(
@@ -12,7 +12,10 @@ struct CustomerRepositoryInMemory: CustomerRepository {
         return [customer]
     }
 
-    func all() -> [Customer] {
+    public init() {
+    }
+
+    public func all() -> [Customer] {
         return customers
     }
 
