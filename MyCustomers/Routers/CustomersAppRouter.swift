@@ -21,7 +21,9 @@ class CustomersAppRouter: CustomersRouter {
     func list() {
         navigationController = UINavigationController()
         if let window = window, navigationController = navigationController {
-            navigationController.viewControllers = [ListCustomersViewController()]
+            let listCustomersViewController = ListCustomersViewController()
+            listCustomersViewController.navigationItem.title = "Customers"
+            navigationController.viewControllers = [listCustomersViewController]
             window.rootViewController = navigationController
         }
     }
