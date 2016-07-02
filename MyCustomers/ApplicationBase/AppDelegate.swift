@@ -1,4 +1,5 @@
 import UIKit
+import MyCustomersCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -6,17 +7,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.backgroundColor = UIColor.whiteColor()
+        window?.tintColor = UIColor.primary
+        window?.makeKeyAndVisible()
 
-        if let window = window {
-            let listCustomersViewController = ListCustomersViewController()
-            let navigationController = UINavigationController()
-            navigationController.viewControllers = [listCustomersViewController]
-            window.rootViewController = navigationController
-            window.backgroundColor = UIColor.whiteColor()
-            window.tintColor = UIColor.primary
-            window.makeKeyAndVisible()
-        }
+        let customersRouter: CustomersRouter = CustomersAppRouter(window: window)
+        customersRouter.list()
 
         return true
     }

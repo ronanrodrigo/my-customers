@@ -1,4 +1,5 @@
 import Foundation
 
-protocol CustomersRouter {
+public protocol CustomersRouter {
+    func list()
 }
