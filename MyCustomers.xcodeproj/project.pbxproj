@@ -17,7 +17,11 @@
 		34E16DD11D249250007257A4 /* MyCustomersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; };
 		34E16DD21D249250007257A4 /* MyCustomersCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34E16DDD1D249409007257A4 /* SaveCustomerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */; };
+		4B7A5324ABF130ED72ECE1F6 /* CustomerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5E0710E956D32D4DF163 /* CustomerRepository.swift */; };
 		4B7A54D4E11CAB4AB061D9A2 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5B0ABBDDE9C95115B967 /* AppColors.swift */; };
+		4B7A5B516AA775BD7C1AF6DA /* CustomerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5E0710E956D32D4DF163 /* CustomerRepository.swift */; };
+		4B7A5E745F74D988D87C6B85 /* ListCustomersOutputPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5F7E880FC5BF2061E623 /* ListCustomersOutputPresenterMock.swift */; };
+		4B7A5EEA4BBA3FBE3E688031 /* ListCustomersInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5E6F3699ED476F81C1F7 /* ListCustomersInteractorTests.swift */; };
 		67A951A49FFBFD6A99A6BB8D /* ListCustomersOutputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A958FFB7631AA70545C729 /* ListCustomersOutputPresenter.swift */; };
 		67A951E0B1E4929710220B38 /* CustomersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A959EDF195242A7C0B2185 /* CustomersRouter.swift */; };
 		67A951EFFAA56529B047947B /* CustomerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A955086D0690D95F245B0C /* CustomerEntity.swift */; };
@@ -25,12 +29,10 @@
 		67A95761BBC7363E2B186A67 /* CustomerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A955086D0690D95F245B0C /* CustomerEntity.swift */; };
 		67A957D16759334F4C3A18D6 /* ListCustomersOutputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A958FFB7631AA70545C729 /* ListCustomersOutputPresenter.swift */; };
 		67A95B171C7DCA7984DCE874 /* ListCustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954D120993A199502CE7D /* ListCustomersViewController.swift */; };
-		67A95B64254BD69039ACD00E /* ListCustomersInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A958865E5FDD98422B16B9 /* ListCustomersInputPresenter.swift */; };
 		67A95BFDD30E14963CC1A03E /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A9510DB85F5747A95EB2B0 /* Customer.swift */; };
 		67A95C7A1DBACFB6C508360A /* SaveCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */; };
 		67A95DFA5DAE45AF395876BB /* CustomersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A959EDF195242A7C0B2185 /* CustomersRouter.swift */; };
 		67A95E228FA3D95B694356F8 /* ListCustomersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A956534DF145C20CE06269 /* ListCustomersDataSource.swift */; };
-		67A95E5948ACEBDF694BE952 /* ListCustomersInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A958865E5FDD98422B16B9 /* ListCustomersInputPresenter.swift */; };
 		67A95F43A1541AF26EDE5211 /* ListCustomersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954E6E317C55589626662 /* ListCustomersInteractor.swift */; };
 		67A95FC35ABF9246AD56EFB0 /* ListCustomersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954E6E317C55589626662 /* ListCustomersInteractor.swift */; };
 /* End PBXBuildFile section */
@@ -88,13 +90,15 @@
 		34E16DCE1D249250007257A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveCustomerViewController.xib; sourceTree = "<group>"; };
 		4B7A5B0ABBDDE9C95115B967 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		4B7A5E0710E956D32D4DF163 /* CustomerRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerRepository.swift; sourceTree = "<group>"; };
+		4B7A5E6F3699ED476F81C1F7 /* ListCustomersInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersInteractorTests.swift; sourceTree = "<group>"; };
+		4B7A5F7E880FC5BF2061E623 /* ListCustomersOutputPresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersOutputPresenterMock.swift; sourceTree = "<group>"; };
 		67A9510DB85F5747A95EB2B0 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		67A954D120993A199502CE7D /* ListCustomersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersViewController.swift; sourceTree = "<group>"; };
 		67A954E6E317C55589626662 /* ListCustomersInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersInteractor.swift; sourceTree = "<group>"; };
 		67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveCustomerViewController.swift; sourceTree = "<group>"; };
 		67A955086D0690D95F245B0C /* CustomerEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerEntity.swift; sourceTree = "<group>"; };
 		67A956534DF145C20CE06269 /* ListCustomersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersDataSource.swift; sourceTree = "<group>"; };
-		67A958865E5FDD98422B16B9 /* ListCustomersInputPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersInputPresenter.swift; sourceTree = "<group>"; };
 		67A958FFB7631AA70545C729 /* ListCustomersOutputPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersOutputPresenter.swift; sourceTree = "<group>"; };
 		67A959EDF195242A7C0B2185 /* CustomersRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +202,7 @@
 				67A951B556DCE83D81EA7C4B /* Interactors */,
 				67A95199391194057036B577 /* Presenters */,
 				67A951D34D27A313477761DD /* Routers */,
+				4B7A553AF20B88FB5D98420A /* Repositories */,
 			);
 			path = MyCustomersCore;
 			sourceTree = "<group>";
@@ -206,15 +211,40 @@
 			isa = PBXGroup;
 			children = (
 				34E16DCE1D249250007257A4 /* Info.plist */,
+				4B7A5BDE815C47B10FDC4C5D /* Interactors */,
+				4B7A5216B03A957C6C6504A3 /* Mocks */,
 			);
 			path = MyCustomersCoreTests;
+			sourceTree = "<group>";
+		};
+		4B7A5216B03A957C6C6504A3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A5F7E880FC5BF2061E623 /* ListCustomersOutputPresenterMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4B7A553AF20B88FB5D98420A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A5E0710E956D32D4DF163 /* CustomerRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		4B7A5BDE815C47B10FDC4C5D /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A5E6F3699ED476F81C1F7 /* ListCustomersInteractorTests.swift */,
+			);
+			path = Interactors;
 			sourceTree = "<group>";
 		};
 		67A95199391194057036B577 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
 				67A958FFB7631AA70545C729 /* ListCustomersOutputPresenter.swift */,
-				67A958865E5FDD98422B16B9 /* ListCustomersInputPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -273,6 +303,7 @@
 				349062861D248D5D00F74168 /* Frameworks */,
 				349062871D248D5D00F74168 /* Resources */,
 				34E16DD81D249250007257A4 /* Embed Frameworks */,
+				9B50E35C0F17ABA7A31E2721 /* Tailor */,
 			);
 			buildRules = (
 			);
@@ -354,6 +385,8 @@
 			mainGroup = 349062801D248D5D00F74168;
 			productRefGroup = 3490628A1D248D5D00F74168 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				349062881D248D5D00F74168 /* MyCustomers */,
@@ -391,6 +424,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9B50E35C0F17ABA7A31E2721 /* Tailor */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Tailor;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if hash tailor 2>/dev/null; then\n  tailor\nelse\n  echo \"warning: Please install Tailor from https://tailor.sh\"\nfi";
+			showEnvVarsInLog = 1;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		349062851D248D5D00F74168 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -413,8 +464,8 @@
 				67A951EFFAA56529B047947B /* CustomerEntity.swift in Sources */,
 				67A95FC35ABF9246AD56EFB0 /* ListCustomersInteractor.swift in Sources */,
 				67A951A49FFBFD6A99A6BB8D /* ListCustomersOutputPresenter.swift in Sources */,
-				67A95E5948ACEBDF694BE952 /* ListCustomersInputPresenter.swift in Sources */,
 				67A95DFA5DAE45AF395876BB /* CustomersRouter.swift in Sources */,
+				4B7A5B516AA775BD7C1AF6DA /* CustomerRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,8 +477,10 @@
 				67A95761BBC7363E2B186A67 /* CustomerEntity.swift in Sources */,
 				67A95F43A1541AF26EDE5211 /* ListCustomersInteractor.swift in Sources */,
 				67A957D16759334F4C3A18D6 /* ListCustomersOutputPresenter.swift in Sources */,
-				67A95B64254BD69039ACD00E /* ListCustomersInputPresenter.swift in Sources */,
 				67A951E0B1E4929710220B38 /* CustomersRouter.swift in Sources */,
+				4B7A5324ABF130ED72ECE1F6 /* CustomerRepository.swift in Sources */,
+				4B7A5EEA4BBA3FBE3E688031 /* ListCustomersInteractorTests.swift in Sources */,
+				4B7A5E745F74D988D87C6B85 /* ListCustomersOutputPresenterMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

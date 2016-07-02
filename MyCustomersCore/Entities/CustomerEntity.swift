@@ -1,8 +1,8 @@
 import Foundation
 
-struct CustomerEntity: Customer {
-    var name: String?
-    var phone: String?
-    var email: String?
-    var address: String?
+public struct CustomerEntity: Customer {
+    public var name: String?
+    public var phone: String?
+    public var email: String?
+    public var address: String?
 }

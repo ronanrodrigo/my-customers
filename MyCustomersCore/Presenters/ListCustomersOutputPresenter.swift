@@ -1,4 +1,5 @@
 import Foundation
 
-protocol ListCustomersOutputPresenter {
+public protocol ListCustomersOutputPresenter {
+    func list(customers: [Customer])
 }
