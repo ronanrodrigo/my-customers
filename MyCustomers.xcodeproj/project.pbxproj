@@ -12,6 +12,7 @@
 		3490628D1D248D5D00F74168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490628C1D248D5D00F74168 /* AppDelegate.swift */; };
 		349062941D248D5D00F74168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349062931D248D5D00F74168 /* Assets.xcassets */; };
 		349062971D248D5D00F74168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349062951D248D5D00F74168 /* LaunchScreen.storyboard */; };
+		34CC62291D274C730006369D /* ListCustomersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CC62281D274C730006369D /* ListCustomersViewControllerTests.swift */; };
 		34E16DBF1D249250007257A4 /* MyCustomersCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 34E16DBE1D249250007257A4 /* MyCustomersCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34E16DC61D249250007257A4 /* MyCustomersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; };
 		34E16DD11D249250007257A4 /* MyCustomersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; };
@@ -39,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		34CC62231D274C4D0006369D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 349062811D248D5D00F74168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 349062881D248D5D00F74168;
+			remoteInfo = MyCustomers;
+		};
 		34E16DC71D249250007257A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 349062811D248D5D00F74168 /* Project object */;
@@ -84,6 +92,9 @@
 		349062931D248D5D00F74168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		349062961D248D5D00F74168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		349062981D248D5D00F74168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34CC621E1D274C4D0006369D /* MyCustomersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCustomersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34CC62221D274C4D0006369D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34CC62281D274C730006369D /* ListCustomersViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersViewControllerTests.swift; sourceTree = "<group>"; };
 		34E16DBC1D249250007257A4 /* MyCustomersCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyCustomersCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E16DBE1D249250007257A4 /* MyCustomersCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCustomersCore.h; sourceTree = "<group>"; };
 		34E16DC01D249250007257A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +125,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34CC621B1D274C4D0006369D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		34E16DB81D249250007257A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +156,7 @@
 				3490628B1D248D5D00F74168 /* MyCustomers */,
 				34E16DBD1D249250007257A4 /* MyCustomersCore */,
 				34E16DCB1D249250007257A4 /* MyCustomersCoreTests */,
+				34CC621F1D274C4D0006369D /* MyCustomersUITests */,
 				3490628A1D248D5D00F74168 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,6 +167,7 @@
 				349062891D248D5D00F74168 /* MyCustomers.app */,
 				34E16DBC1D249250007257A4 /* MyCustomersCore.framework */,
 				34E16DC51D249250007257A4 /* MyCustomersCoreTests.xctest */,
+				34CC621E1D274C4D0006369D /* MyCustomersUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +213,15 @@
 				4B7A554CED2A5AFF6194990D /* UITableViewCellExtension.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		34CC621F1D274C4D0006369D /* MyCustomersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				34CC62221D274C4D0006369D /* Info.plist */,
+				34CC62281D274C730006369D /* ListCustomersViewControllerTests.swift */,
+			);
+			path = MyCustomersUITests;
 			sourceTree = "<group>";
 		};
 		34E16DBD1D249250007257A4 /* MyCustomersCore */ = {
@@ -318,6 +347,24 @@
 			productReference = 349062891D248D5D00F74168 /* MyCustomers.app */;
 			productType = "com.apple.product-type.application";
 		};
+		34CC621D1D274C4D0006369D /* MyCustomersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34CC62271D274C4D0006369D /* Build configuration list for PBXNativeTarget "MyCustomersUITests" */;
+			buildPhases = (
+				34CC621A1D274C4D0006369D /* Sources */,
+				34CC621B1D274C4D0006369D /* Frameworks */,
+				34CC621C1D274C4D0006369D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34CC62241D274C4D0006369D /* PBXTargetDependency */,
+			);
+			name = MyCustomersUITests;
+			productName = MyCustomersUITests;
+			productReference = 34CC621E1D274C4D0006369D /* MyCustomersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		34E16DBB1D249250007257A4 /* MyCustomersCore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34E16DD71D249250007257A4 /* Build configuration list for PBXNativeTarget "MyCustomersCore" */;
@@ -368,6 +415,10 @@
 					349062881D248D5D00F74168 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					34CC621D1D274C4D0006369D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 349062881D248D5D00F74168;
+					};
 					34E16DBB1D249250007257A4 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -388,13 +439,12 @@
 			mainGroup = 349062801D248D5D00F74168;
 			productRefGroup = 3490628A1D248D5D00F74168 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				349062881D248D5D00F74168 /* MyCustomers */,
 				34E16DBB1D249250007257A4 /* MyCustomersCore */,
 				34E16DC41D249250007257A4 /* MyCustomersCoreTests */,
+				34CC621D1D274C4D0006369D /* MyCustomersUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -408,6 +458,13 @@
 				349062971D248D5D00F74168 /* LaunchScreen.storyboard in Resources */,
 				349062941D248D5D00F74168 /* Assets.xcassets in Resources */,
 				34E16DDD1D249409007257A4 /* SaveCustomerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34CC621C1D274C4D0006369D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +498,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if hash tailor 2>/dev/null; then\n  tailor\nelse\n  echo \"warning: Please install Tailor from https://tailor.sh\"\nfi";
-			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -457,6 +513,14 @@
 				67A95E228FA3D95B694356F8 /* ListCustomersDataSource.swift in Sources */,
 				4B7A54D4E11CAB4AB061D9A2 /* AppColors.swift in Sources */,
 				4B7A59E78DD56B9719FE74C2 /* UITableViewCellExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34CC621A1D274C4D0006369D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34CC62291D274C730006369D /* ListCustomersViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +555,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		34CC62241D274C4D0006369D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 349062881D248D5D00F74168 /* MyCustomers */;
+			targetProxy = 34CC62231D274C4D0006369D /* PBXContainerItemProxy */;
+		};
 		34E16DC81D249250007257A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 34E16DBB1D249250007257A4 /* MyCustomersCore */;
@@ -628,6 +697,28 @@
 			};
 			name = Release;
 		};
+		34CC62251D274C4D0006369D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyCustomersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.MyCustomersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyCustomers;
+			};
+			name = Debug;
+		};
+		34CC62261D274C4D0006369D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyCustomersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.MyCustomersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyCustomers;
+			};
+			name = Release;
+		};
 		34E16DD31D249250007257A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -708,6 +799,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		34CC62271D274C4D0006369D /* Build configuration list for PBXNativeTarget "MyCustomersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34CC62251D274C4D0006369D /* Debug */,
+				34CC62261D274C4D0006369D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		34E16DD71D249250007257A4 /* Build configuration list for PBXNativeTarget "MyCustomersCore" */ = {
 			isa = XCConfigurationList;
