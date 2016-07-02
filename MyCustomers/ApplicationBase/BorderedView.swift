@@ -15,7 +15,7 @@ import QuartzCore
         }
     }
 
-    @IBInspectable var borderMargin: CGFloat = 10 {
+    @IBInspectable var borderMargin: CGFloat = 15 {
         didSet {
             configureView()
         }
