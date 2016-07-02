@@ -28,7 +28,7 @@
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="0.82580888269999997" green="0.8265900612" blue="0.8258998394" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="value" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="borderMargin">
                                             <real key="value" value="0.0"/>
@@ -39,14 +39,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R3o-m3-dmM">
-                                            <rect key="frame" x="8" y="0.0" width="584" height="50"/>
+                                            <rect key="frame" x="15" y="0.0" width="577" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstItem="R3o-m3-dmM" firstAttribute="leading" secondItem="4TW-6t-1js" secondAttribute="leading" constant="8" id="IY5-yh-33s"/>
+                                        <constraint firstItem="R3o-m3-dmM" firstAttribute="leading" secondItem="4TW-6t-1js" secondAttribute="leading" constant="15" id="IY5-yh-33s"/>
                                         <constraint firstAttribute="trailing" secondItem="R3o-m3-dmM" secondAttribute="trailing" constant="8" id="LCA-Vk-0bo"/>
                                         <constraint firstItem="R3o-m3-dmM" firstAttribute="top" secondItem="4TW-6t-1js" secondAttribute="top" id="MR3-j7-PLR"/>
                                         <constraint firstAttribute="bottom" secondItem="R3o-m3-dmM" secondAttribute="bottom" id="UU1-sf-YHF"/>
@@ -57,7 +57,7 @@
                                             <real key="value" value="1"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="0.82580888269999997" green="0.8265900612" blue="0.8258998394" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="value" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
@@ -65,7 +65,7 @@
                                     <rect key="frame" x="0.0" y="50" width="600" height="50"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KWC-JV-anI">
-                                            <rect key="frame" x="8" y="0.0" width="584" height="50"/>
+                                            <rect key="frame" x="15" y="0.0" width="577" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                                         </textField>
@@ -75,7 +75,7 @@
                                         <constraint firstAttribute="trailing" secondItem="KWC-JV-anI" secondAttribute="trailing" constant="8" id="GvE-Nt-4DI"/>
                                         <constraint firstAttribute="height" constant="50" id="V6B-dA-xnU"/>
                                         <constraint firstAttribute="bottom" secondItem="KWC-JV-anI" secondAttribute="bottom" id="VNb-4T-wrQ"/>
-                                        <constraint firstItem="KWC-JV-anI" firstAttribute="leading" secondItem="DJK-83-6AY" secondAttribute="leading" constant="8" id="cAm-Xn-ayz"/>
+                                        <constraint firstItem="KWC-JV-anI" firstAttribute="leading" secondItem="DJK-83-6AY" secondAttribute="leading" constant="15" id="cAm-Xn-ayz"/>
                                         <constraint firstItem="KWC-JV-anI" firstAttribute="top" secondItem="DJK-83-6AY" secondAttribute="top" id="lns-FJ-wzZ"/>
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
@@ -83,7 +83,7 @@
                                             <real key="value" value="1"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="0.82580888269999997" green="0.8265900612" blue="0.8258998394" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="value" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
@@ -91,7 +91,7 @@
                                     <rect key="frame" x="0.0" y="100" width="600" height="50"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WQq-9b-ctR">
-                                            <rect key="frame" x="8" y="0.0" width="584" height="50"/>
+                                            <rect key="frame" x="15" y="0.0" width="577" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                         </textField>
@@ -102,14 +102,14 @@
                                         <constraint firstAttribute="trailing" secondItem="WQq-9b-ctR" secondAttribute="trailing" constant="8" id="4L7-dw-Ekc"/>
                                         <constraint firstItem="WQq-9b-ctR" firstAttribute="top" secondItem="Mvy-n3-Hqp" secondAttribute="top" id="7Fg-jZ-faj"/>
                                         <constraint firstAttribute="bottom" secondItem="WQq-9b-ctR" secondAttribute="bottom" id="Cea-sM-BeT"/>
-                                        <constraint firstItem="WQq-9b-ctR" firstAttribute="leading" secondItem="Mvy-n3-Hqp" secondAttribute="leading" constant="8" id="s1P-sn-9h9"/>
+                                        <constraint firstItem="WQq-9b-ctR" firstAttribute="leading" secondItem="Mvy-n3-Hqp" secondAttribute="leading" constant="15" id="s1P-sn-9h9"/>
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                             <real key="value" value="1"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="0.82580888269999997" green="0.8265900612" blue="0.8258998394" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="value" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                     <variation key="default">
@@ -122,14 +122,14 @@
                                     <rect key="frame" x="0.0" y="150" width="600" height="50"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="msT-5y-ePB">
-                                            <rect key="frame" x="8" y="0.0" width="584" height="50"/>
+                                            <rect key="frame" x="15" y="0.0" width="577" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstItem="msT-5y-ePB" firstAttribute="leading" secondItem="QUP-5M-dyl" secondAttribute="leading" constant="8" id="FbC-ek-CKA"/>
+                                        <constraint firstItem="msT-5y-ePB" firstAttribute="leading" secondItem="QUP-5M-dyl" secondAttribute="leading" constant="15" id="FbC-ek-CKA"/>
                                         <constraint firstAttribute="bottom" secondItem="msT-5y-ePB" secondAttribute="bottom" id="Jbs-Z1-VGn"/>
                                         <constraint firstItem="msT-5y-ePB" firstAttribute="top" secondItem="QUP-5M-dyl" secondAttribute="top" id="Qga-Pw-LtL"/>
                                         <constraint firstAttribute="height" constant="50" id="fO9-JC-xJl"/>
@@ -140,7 +140,7 @@
                                             <real key="value" value="1"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="0.82580888269999997" green="0.8265900612" blue="0.8258998394" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="value" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="borderMargin">
                                             <real key="value" value="0.0"/>
