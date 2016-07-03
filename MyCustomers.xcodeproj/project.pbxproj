@@ -23,7 +23,9 @@
 		4B7A5324ABF130ED72ECE1F6 /* CustomerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5E0710E956D32D4DF163 /* CustomerRepository.swift */; };
 		4B7A54D4E11CAB4AB061D9A2 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5B0ABBDDE9C95115B967 /* AppColors.swift */; };
 		4B7A5572E143216D53D9EDA0 /* CreateCustomerOutputPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A52A0D8F053CCBA41C2F5 /* CreateCustomerOutputPresenterMock.swift */; };
+		4B7A55F8512F85F0798EC93F /* CreateCustomerOutputPresenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A549DED4F0D4E56A12720 /* CreateCustomerOutputPresenterApp.swift */; };
 		4B7A576E85DB2CBB5E1E6E90 /* CreateCustomerInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5265FF7E409DBE825F01 /* CreateCustomerInputPresenter.swift */; };
+		4B7A5889D18872A4FA02643D /* CreateCustomerInputPresenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A53F5BE3CE9F24E88281D /* CreateCustomerInputPresenterApp.swift */; };
 		4B7A59E78DD56B9719FE74C2 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A554CED2A5AFF6194990D /* UITableViewCellExtension.swift */; };
 		4B7A5AD6097F661801FD3FC8 /* CreateCustomerOutputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A55DD3C839D0AE6FBBC61 /* CreateCustomerOutputPresenter.swift */; };
 		4B7A5B516AA775BD7C1AF6DA /* CustomerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5E0710E956D32D4DF163 /* CustomerRepository.swift */; };
@@ -113,6 +115,8 @@
 		4B7A51BC1A5BC8992121B91A /* CustomersAppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersAppRouter.swift; sourceTree = "<group>"; };
 		4B7A5265FF7E409DBE825F01 /* CreateCustomerInputPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerInputPresenter.swift; sourceTree = "<group>"; };
 		4B7A52A0D8F053CCBA41C2F5 /* CreateCustomerOutputPresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerOutputPresenterMock.swift; sourceTree = "<group>"; };
+		4B7A53F5BE3CE9F24E88281D /* CreateCustomerInputPresenterApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerInputPresenterApp.swift; sourceTree = "<group>"; };
+		4B7A549DED4F0D4E56A12720 /* CreateCustomerOutputPresenterApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerOutputPresenterApp.swift; sourceTree = "<group>"; };
 		4B7A554CED2A5AFF6194990D /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		4B7A55DD3C839D0AE6FBBC61 /* CreateCustomerOutputPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerOutputPresenter.swift; sourceTree = "<group>"; };
 		4B7A5697E3A7587DDFC278B0 /* CreateCustomerInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerInteractorTests.swift; sourceTree = "<group>"; };
@@ -194,6 +198,7 @@
 				34C095681D248D8A00A01D06 /* ViewControllers */,
 				34C095691D248D9100A01D06 /* Views */,
 				4B7A56DDAC51858BEFC57716 /* Routers */,
+				4B7A511EC919BECD7A9D0A42 /* Presenters */,
 			);
 			path = MyCustomers;
 			sourceTree = "<group>";
@@ -263,6 +268,15 @@
 				4B7A5216B03A957C6C6504A3 /* Mocks */,
 			);
 			path = MyCustomersCoreTests;
+			sourceTree = "<group>";
+		};
+		4B7A511EC919BECD7A9D0A42 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A53F5BE3CE9F24E88281D /* CreateCustomerInputPresenterApp.swift */,
+				4B7A549DED4F0D4E56A12720 /* CreateCustomerOutputPresenterApp.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 		4B7A5216B03A957C6C6504A3 /* Mocks */ = {
@@ -543,6 +557,8 @@
 				4B7A54D4E11CAB4AB061D9A2 /* AppColors.swift in Sources */,
 				4B7A59E78DD56B9719FE74C2 /* UITableViewCellExtension.swift in Sources */,
 				4B7A5F5FA1B5106793F3F9E6 /* CustomersAppRouter.swift in Sources */,
+				4B7A5889D18872A4FA02643D /* CreateCustomerInputPresenterApp.swift in Sources */,
+				4B7A55F8512F85F0798EC93F /* CreateCustomerOutputPresenterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

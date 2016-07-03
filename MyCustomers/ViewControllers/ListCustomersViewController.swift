@@ -14,7 +14,11 @@ class ListCustomersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    override func viewDidAppear(animated: Bool) {
         configureDataSource()
+        tableView.reloadData()
     }
 
     // MARK: Setups
