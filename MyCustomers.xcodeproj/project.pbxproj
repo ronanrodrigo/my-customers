@@ -17,7 +17,7 @@
 		34E16DC61D249250007257A4 /* MyCustomersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; };
 		34E16DD11D249250007257A4 /* MyCustomersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; };
 		34E16DD21D249250007257A4 /* MyCustomersCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		34E16DDD1D249409007257A4 /* SaveCustomerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */; };
+		34E16DDD1D249409007257A4 /* NewCustomerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E16DDB1D249409007257A4 /* NewCustomerViewController.xib */; };
 		4B7A5324ABF130ED72ECE1F6 /* CustomerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5E0710E956D32D4DF163 /* CustomerRepository.swift */; };
 		4B7A54D4E11CAB4AB061D9A2 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5B0ABBDDE9C95115B967 /* AppColors.swift */; };
 		4B7A59E78DD56B9719FE74C2 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A554CED2A5AFF6194990D /* UITableViewCellExtension.swift */; };
@@ -33,7 +33,7 @@
 		67A957D16759334F4C3A18D6 /* ListCustomersOutputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A958FFB7631AA70545C729 /* ListCustomersOutputPresenter.swift */; };
 		67A95B171C7DCA7984DCE874 /* ListCustomersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954D120993A199502CE7D /* ListCustomersViewController.swift */; };
 		67A95BFDD30E14963CC1A03E /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A9510DB85F5747A95EB2B0 /* Customer.swift */; };
-		67A95C7A1DBACFB6C508360A /* SaveCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */; };
+		67A95C7A1DBACFB6C508360A /* NewCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954F2713CA7832138DEF3 /* NewCustomerViewController.swift */; };
 		67A95DFA5DAE45AF395876BB /* CustomersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A959EDF195242A7C0B2185 /* CustomersRouter.swift */; };
 		67A95E228FA3D95B694356F8 /* ListCustomersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A956534DF145C20CE06269 /* ListCustomersDataSource.swift */; };
 		67A95F43A1541AF26EDE5211 /* ListCustomersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A954E6E317C55589626662 /* ListCustomersInteractor.swift */; };
@@ -101,7 +101,7 @@
 		34E16DC01D249250007257A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E16DC51D249250007257A4 /* MyCustomersCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCustomersCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E16DCE1D249250007257A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveCustomerViewController.xib; sourceTree = "<group>"; };
+		34E16DDB1D249409007257A4 /* NewCustomerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewCustomerViewController.xib; sourceTree = "<group>"; };
 		4B7A51BC1A5BC8992121B91A /* CustomersAppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersAppRouter.swift; sourceTree = "<group>"; };
 		4B7A554CED2A5AFF6194990D /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		4B7A5B0ABBDDE9C95115B967 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		67A9510DB85F5747A95EB2B0 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		67A954D120993A199502CE7D /* ListCustomersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersViewController.swift; sourceTree = "<group>"; };
 		67A954E6E317C55589626662 /* ListCustomersInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersInteractor.swift; sourceTree = "<group>"; };
-		67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveCustomerViewController.swift; sourceTree = "<group>"; };
+		67A954F2713CA7832138DEF3 /* NewCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCustomerViewController.swift; sourceTree = "<group>"; };
 		67A955086D0690D95F245B0C /* CustomerEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerEntity.swift; sourceTree = "<group>"; };
 		67A956534DF145C20CE06269 /* ListCustomersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersDataSource.swift; sourceTree = "<group>"; };
 		67A958FFB7631AA70545C729 /* ListCustomersOutputPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersOutputPresenter.swift; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 		34C095681D248D8A00A01D06 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				67A954F2713CA7832138DEF3 /* SaveCustomerViewController.swift */,
+				67A954F2713CA7832138DEF3 /* NewCustomerViewController.swift */,
 				67A954D120993A199502CE7D /* ListCustomersViewController.swift */,
 				67A956534DF145C20CE06269 /* ListCustomersDataSource.swift */,
 			);
@@ -211,7 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				349062951D248D5D00F74168 /* LaunchScreen.storyboard */,
-				34E16DDB1D249409007257A4 /* SaveCustomerViewController.xib */,
+				34E16DDB1D249409007257A4 /* NewCustomerViewController.xib */,
 				3402EF9F1D26CA070026C2B9 /* ListCustomersViewController.xib */,
 				4B7A554CED2A5AFF6194990D /* UITableViewCellExtension.swift */,
 			);
@@ -468,7 +468,7 @@
 				3402EFA11D26CA070026C2B9 /* ListCustomersViewController.xib in Resources */,
 				349062971D248D5D00F74168 /* LaunchScreen.storyboard in Resources */,
 				349062941D248D5D00F74168 /* Assets.xcassets in Resources */,
-				34E16DDD1D249409007257A4 /* SaveCustomerViewController.xib in Resources */,
+				34E16DDD1D249409007257A4 /* NewCustomerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +519,7 @@
 			files = (
 				3490628D1D248D5D00F74168 /* AppDelegate.swift in Sources */,
 				345A75431D25B9FB0060BFE9 /* BorderedView.swift in Sources */,
-				67A95C7A1DBACFB6C508360A /* SaveCustomerViewController.swift in Sources */,
+				67A95C7A1DBACFB6C508360A /* NewCustomerViewController.swift in Sources */,
 				67A95B171C7DCA7984DCE874 /* ListCustomersViewController.swift in Sources */,
 				67A95E228FA3D95B694356F8 /* ListCustomersDataSource.swift in Sources */,
 				4B7A54D4E11CAB4AB061D9A2 /* AppColors.swift in Sources */,

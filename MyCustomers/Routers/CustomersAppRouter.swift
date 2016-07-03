@@ -29,9 +29,9 @@ class CustomersAppRouter: UINavigationController, CustomersRouter {
     }
 
     func new() {
-        let saveCustomerViewController = SaveCustomerViewController()
-        saveCustomerViewController.navigationItem.title = "New customer"
-        pushViewController(saveCustomerViewController, animated: true)
+        let newCustomerViewController = NewCustomerViewController()
+        newCustomerViewController.navigationItem.title = "New customer"
+        pushViewController(newCustomerViewController, animated: true)
     }
 
 }

@@ -1,6 +1,6 @@
 import UIKit
 
-class SaveCustomerViewController: UIViewController {
+class NewCustomerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
