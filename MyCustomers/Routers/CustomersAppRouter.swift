@@ -7,6 +7,7 @@ class CustomersAppRouter: UINavigationController, CustomersRouter {
     // MARK: Properties
 
     var window: UIWindow?
+    var listCustomersViewController: ListCustomersViewController?
 
     // MARK: Initializers
 
@@ -18,11 +19,13 @@ class CustomersAppRouter: UINavigationController, CustomersRouter {
     // MARK: CustomersRouter
 
     func list() {
-        let listCustomersViewController = ListCustomersViewController()
-        listCustomersViewController.navigationItem.title = "Customers"
-        let addCustomerButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(new))
-        listCustomersViewController.navigationItem.rightBarButtonItem = addCustomerButton
-        viewControllers = [listCustomersViewController]
+        listCustomersViewController = ListCustomersViewController()
+        if let listCustomersViewController = listCustomersViewController {
+            listCustomersViewController.navigationItem.title = "Customers"
+            let newCustomerButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(new))
+            listCustomersViewController.navigationItem.rightBarButtonItem = newCustomerButton
+            viewControllers = [listCustomersViewController]
+        }
         if let window = window {
             window.rootViewController = self
         }
@@ -31,7 +34,17 @@ class CustomersAppRouter: UINavigationController, CustomersRouter {
     func new() {
         let newCustomerViewController = NewCustomerViewController()
         newCustomerViewController.navigationItem.title = "New customer"
+        let createCustomerButton = UIBarButtonItem(
+            barButtonSystemItem: .Done, target: newCustomerViewController,
+            action: #selector(NewCustomerViewController.createCustomer))
+        newCustomerViewController.navigationItem.rightBarButtonItem = createCustomerButton
         pushViewController(newCustomerViewController, animated: true)
+    }
+
+    func backToList() {
+        if let listCustomersViewController = listCustomersViewController {
+            popToViewController(listCustomersViewController, animated: true)
+        }
     }
 
 }
