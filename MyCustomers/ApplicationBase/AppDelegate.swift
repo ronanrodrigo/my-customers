@@ -1,6 +1,9 @@
 import UIKit
 import MyCustomersCore
 
+let customerRepositoryInMemory = CustomerRepositoryInMemory()
+var customersAppRouter: CustomersAppRouter?
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -12,8 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.tintColor = UIColor.primary
         window?.makeKeyAndVisible()
 
-        let customersRouter: CustomersRouter = CustomersAppRouter(window: window)
-        customersRouter.list()
+        customersAppRouter = CustomersAppRouter(window: window)
+        if let customersAppRouter = customersAppRouter {
+            customersAppRouter.list()
+        }
 
         return true
     }

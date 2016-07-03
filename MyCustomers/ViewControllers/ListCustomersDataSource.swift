@@ -13,7 +13,7 @@ class ListCustomersDataSource: NSObject, UITableViewDataSource, ListCustomersOut
 
     override init() {
         super.init()
-        let customerRepository = CustomerRepositoryInMemory()
+        let customerRepository = customerRepositoryInMemory
         ListCustomersInteractor(listCustomersOutputPresenter: self, customerRepository: customerRepository).list()
     }
 
