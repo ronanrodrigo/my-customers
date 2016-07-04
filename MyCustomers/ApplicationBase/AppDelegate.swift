@@ -2,7 +2,7 @@ import UIKit
 import MyCustomersCore
 
 let customerRepositoryInMemory = CustomerRepositoryInMemory()
-var customersAppRouter: CustomersAppRouter?
+var customersAppRouter: CustomersRouterApp?
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

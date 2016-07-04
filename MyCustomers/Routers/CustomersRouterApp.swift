@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import MyCustomersCore
 
-class CustomersAppRouter: UINavigationController, CustomersRouter {
+class CustomersRouterApp: UINavigationController, CustomersRouter {
 
     // MARK: Properties
 
