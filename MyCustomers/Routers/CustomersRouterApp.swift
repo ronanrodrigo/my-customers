@@ -36,7 +36,7 @@ class CustomersRouterApp: UINavigationController, CustomersRouter {
         newCustomerViewController.navigationItem.title = "New customer"
         let createCustomerButton = UIBarButtonItem(
             barButtonSystemItem: .Done, target: newCustomerViewController,
-            action: #selector(NewCustomerViewController.createCustomer))
+            action: #selector(NewCustomerViewController.didTouchAtSaveCustomer))
         newCustomerViewController.navigationItem.rightBarButtonItem = createCustomerButton
         pushViewController(newCustomerViewController, animated: true)
     }

@@ -19,7 +19,7 @@ class NewCustomerViewController: UIViewController {
         super.viewWillLayoutSubviews()
     }
 
-    func createCustomer() {
+    func didTouchAtSaveCustomer() {
         let createCustomerOutputPresenterApp: CreateCustomerOutputPresenterApp =
             CreateCustomerOutputPresenterApp(newCustomerViewController: self)
         let createCustomerInputPresenterApp: CreateCustomerInputPresenter =
