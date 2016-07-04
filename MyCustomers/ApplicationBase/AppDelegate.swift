@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.tintColor = UIColor.primary
         window?.makeKeyAndVisible()
 
-        customersAppRouter = CustomersAppRouter(window: window)
+        customersAppRouter = CustomersRouterApp(window: window)
         if let customersAppRouter = customersAppRouter {
             customersAppRouter.list()
         }
