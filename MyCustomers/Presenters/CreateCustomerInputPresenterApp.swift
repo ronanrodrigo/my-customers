@@ -18,7 +18,11 @@ class CreateCustomerInputPresenterApp: CreateCustomerInputPresenter {
     }
 
     func generateCustomerEntity() -> Customer {
-        return CustomerEntity(name: "shu", phone: "shu", email: "shu", address: "shu")
+        return CustomerEntity(
+            name: newCustomerViewController.name.text,
+            phone: newCustomerViewController.phone.text,
+            email: newCustomerViewController.email.text,
+            address: newCustomerViewController.address.text)
     }
 
 }

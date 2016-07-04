@@ -3,6 +3,12 @@ import MyCustomersCore
 
 class NewCustomerViewController: UIViewController {
 
+    // MARK: Outlets
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var phone: UITextField!
+    @IBOutlet weak var address: UITextField!
+
     // MARK: UIViewController
 
     override func viewDidLoad() {

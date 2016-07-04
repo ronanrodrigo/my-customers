@@ -18,6 +18,7 @@
 		34E16DD11D249250007257A4 /* MyCustomersCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; };
 		34E16DD21D249250007257A4 /* MyCustomersCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34E16DBC1D249250007257A4 /* MyCustomersCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34E16DDD1D249409007257A4 /* NewCustomerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E16DDB1D249409007257A4 /* NewCustomerViewController.xib */; };
+		34FB191A1D29DC2100D886A4 /* CreateCustomerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB19191D29DC2100D886A4 /* CreateCustomerViewControllerTests.swift */; };
 		4B7A502B4E86D3C4F011FDA8 /* CreateCustomerOutputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A55DD3C839D0AE6FBBC61 /* CreateCustomerOutputPresenter.swift */; };
 		4B7A5071A562F01F1D69579D /* CreateCustomerInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5697E3A7587DDFC278B0 /* CreateCustomerInteractorTests.swift */; };
 		4B7A5324ABF130ED72ECE1F6 /* CustomerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5E0710E956D32D4DF163 /* CustomerRepository.swift */; };
@@ -112,6 +113,7 @@
 		34E16DC51D249250007257A4 /* MyCustomersCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCustomersCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E16DCE1D249250007257A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E16DDB1D249409007257A4 /* NewCustomerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewCustomerViewController.xib; sourceTree = "<group>"; };
+		34FB19191D29DC2100D886A4 /* CreateCustomerViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerViewControllerTests.swift; sourceTree = "<group>"; };
 		4B7A51BC1A5BC8992121B91A /* CustomersAppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomersAppRouter.swift; sourceTree = "<group>"; };
 		4B7A5265FF7E409DBE825F01 /* CreateCustomerInputPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerInputPresenter.swift; sourceTree = "<group>"; };
 		4B7A52A0D8F053CCBA41C2F5 /* CreateCustomerOutputPresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerOutputPresenterMock.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			children = (
 				34CC62221D274C4D0006369D /* Info.plist */,
 				34CC62281D274C730006369D /* ListCustomersViewControllerTests.swift */,
+				34FB19191D29DC2100D886A4 /* CreateCustomerViewControllerTests.swift */,
 			);
 			path = MyCustomersUITests;
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FB191A1D29DC2100D886A4 /* CreateCustomerViewControllerTests.swift in Sources */,
 				34CC62291D274C730006369D /* ListCustomersViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -861,6 +865,7 @@
 				34CC62261D274C4D0006369D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34E16DD71D249250007257A4 /* Build configuration list for PBXNativeTarget "MyCustomersCore" */ = {
 			isa = XCConfigurationList;
