@@ -20,8 +20,7 @@ class NewCustomerViewController: UIViewController {
     }
 
     func didTouchAtSaveCustomer() {
-        let createCustomerOutputPresenterApp: CreateCustomerOutputPresenterApp =
-            CreateCustomerOutputPresenterApp(newCustomerViewController: self)
+        let createCustomerOutputPresenterApp: CreateCustomerOutputPresenterApp = CreateCustomerOutputPresenterApp()
         let createCustomerInputPresenterApp: CreateCustomerInputPresenter =
             CreateCustomerInputPresenterApp(newCustomerViewController: self)
         createCustomerInputPresenterApp.createCustomer(createCustomerOutputPresenterApp)
