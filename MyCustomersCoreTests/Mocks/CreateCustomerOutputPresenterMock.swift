@@ -2,10 +2,10 @@ import Foundation
 
 class CreateCustomerOutputPresenterMock: CreateCustomerOutputPresenter {
 
-    var showedCustomer: Customer?
+    var showedCustomer = false
 
-    func show(customer: Customer) {
-        showedCustomer = customer
+    func show() {
+        showedCustomer = true
     }
 
 }

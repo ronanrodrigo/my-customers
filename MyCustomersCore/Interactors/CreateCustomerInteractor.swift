@@ -11,8 +11,8 @@ public struct CreateCustomerInteractor {
     }
 
     public func create(customer: Customer) {
-        let createdCustomer = customerRepository.create(customer)
-        createCustomerOutputPresenter.show(createdCustomer)
+        customerRepository.create(customer)
+        createCustomerOutputPresenter.show()
     }
 
 }

@@ -22,8 +22,7 @@ class CreateCustomerInteractorTests: XCTestCase {
 
         createCustomerInteractor.create(customer)
 
-        XCTAssertNotNil(createCustomerOutputPresenter.showedCustomer)
-        XCTAssertEqual(customer.name, createCustomerOutputPresenter.showedCustomer!.name)
+        XCTAssertTrue(createCustomerOutputPresenter.showedCustomer)
         XCTAssertNotNil(customersRespository.customers.last!.name == customer.name)
     }
 

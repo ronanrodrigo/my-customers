@@ -3,7 +3,7 @@ import MyCustomersCore
 
 class CreateCustomerOutputPresenterApp: CreateCustomerOutputPresenter {
 
-    func show(customer: Customer) {
+    func show() {
         if let customersAppRouter = customersAppRouter {
             customersAppRouter.backToList()
         }
