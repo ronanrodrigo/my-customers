@@ -22,7 +22,6 @@
 		4B7A502B4E86D3C4F011FDA8 /* CreateCustomerOutputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A55DD3C839D0AE6FBBC61 /* CreateCustomerOutputPresenter.swift */; };
 		4B7A5071A562F01F1D69579D /* CreateCustomerInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5697E3A7587DDFC278B0 /* CreateCustomerInteractorTests.swift */; };
 		4B7A5324ABF130ED72ECE1F6 /* CustomerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5E0710E956D32D4DF163 /* CustomerRepository.swift */; };
-		4B7A54D4E11CAB4AB061D9A2 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5B0ABBDDE9C95115B967 /* AppColors.swift */; };
 		4B7A5572E143216D53D9EDA0 /* CreateCustomerOutputPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A52A0D8F053CCBA41C2F5 /* CreateCustomerOutputPresenterMock.swift */; };
 		4B7A55F8512F85F0798EC93F /* CreateCustomerOutputPresenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A549DED4F0D4E56A12720 /* CreateCustomerOutputPresenterApp.swift */; };
 		4B7A576E85DB2CBB5E1E6E90 /* CreateCustomerInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A5265FF7E409DBE825F01 /* CreateCustomerInputPresenter.swift */; };
@@ -123,7 +122,6 @@
 		4B7A55DD3C839D0AE6FBBC61 /* CreateCustomerOutputPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerOutputPresenter.swift; sourceTree = "<group>"; };
 		4B7A5697E3A7587DDFC278B0 /* CreateCustomerInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerInteractorTests.swift; sourceTree = "<group>"; };
 		4B7A5AB8027721360293BCE2 /* CreateCustomerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomerInteractor.swift; sourceTree = "<group>"; };
-		4B7A5B0ABBDDE9C95115B967 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		4B7A5E0710E956D32D4DF163 /* CustomerRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerRepository.swift; sourceTree = "<group>"; };
 		4B7A5E6F3699ED476F81C1F7 /* ListCustomersInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersInteractorTests.swift; sourceTree = "<group>"; };
 		4B7A5F7E880FC5BF2061E623 /* ListCustomersOutputPresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCustomersOutputPresenterMock.swift; sourceTree = "<group>"; };
@@ -212,7 +210,6 @@
 				349062931D248D5D00F74168 /* Assets.xcassets */,
 				349062981D248D5D00F74168 /* Info.plist */,
 				345A75421D25B9FB0060BFE9 /* BorderedView.swift */,
-				4B7A5B0ABBDDE9C95115B967 /* AppColors.swift */,
 			);
 			path = ApplicationBase;
 			sourceTree = "<group>";
@@ -561,7 +558,6 @@
 				67A95C7A1DBACFB6C508360A /* NewCustomerViewController.swift in Sources */,
 				67A95B171C7DCA7984DCE874 /* ListCustomersViewController.swift in Sources */,
 				67A95E228FA3D95B694356F8 /* ListCustomersDataSource.swift in Sources */,
-				4B7A54D4E11CAB4AB061D9A2 /* AppColors.swift in Sources */,
 				4B7A59E78DD56B9719FE74C2 /* UITableViewCellExtension.swift in Sources */,
 				4B7A5F5FA1B5106793F3F9E6 /* CustomersRouterApp.swift in Sources */,
 				4B7A5889D18872A4FA02643D /* CreateCustomerInputPresenterApp.swift in Sources */,
