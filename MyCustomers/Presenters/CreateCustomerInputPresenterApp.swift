@@ -13,10 +13,12 @@ class CreateCustomerInputPresenterApp: CreateCustomerInputPresenter {
     }
 
     func createCustomer() {
-        let interactor = CreateCustomerInteractor(
+        CreateCustomerInteractor(
             customerRepository: customerRepositoryInMemory,
-            createCustomerOutputPresenter: createCustomerOutputPresenter)
-        interactor.create(customer: generateCustomerEntity())
+            createCustomerOutputPresenter: createCustomerOutputPresenter
+        ).create(
+            customer: generateCustomerEntity()
+        )
     }
 
     func generateCustomerEntity() -> Customer {
@@ -24,7 +26,8 @@ class CreateCustomerInputPresenterApp: CreateCustomerInputPresenter {
             name: newCustomerForm.enteredName,
             phone: newCustomerForm.enteredPhone,
             email: newCustomerForm.enteredEmail,
-            address: newCustomerForm.enteredAddress)
+            address: newCustomerForm.enteredAddress
+        )
     }
 
 }

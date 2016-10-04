@@ -37,9 +37,7 @@ class NewCustomerViewController: UIViewController, NewCustomerForm {
     // MARK: Events
 
     func didTouchAtSaveCustomer() {
-        let createCustomerInputPresenterApp: CreateCustomerInputPresenter =
-            CreateCustomerInputPresenterApp(newCustomerForm: self)
-        createCustomerInputPresenterApp.createCustomer()
+        CreateCustomerInputPresenterApp(newCustomerForm: self).createCustomer()
     }
 
 }
