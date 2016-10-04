@@ -24,7 +24,7 @@ class ListCustomersDataSource: NSObject, UITableViewDataSource, ListCustomersOut
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) ??
-            UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: cellIdentifier)
+            UITableViewCell(style: .subtitle, reuseIdentifier: cellIdentifier)
         cell.show(customer: customers[indexPath.row])
         return cell
     }
