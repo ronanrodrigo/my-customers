@@ -2,10 +2,10 @@ import Foundation
 
 public protocol CustomerRepository {
     func all() -> [Customer]
-    func create(customer: Customer) -> Customer
+    func create(_ customer: Customer) -> Customer
 }
 
-public class CustomerRepositoryInMemory: CustomerRepository {
+open class CustomerRepositoryInMemory: CustomerRepository {
 
     var customers: [Customer]
 
@@ -15,11 +15,11 @@ public class CustomerRepositoryInMemory: CustomerRepository {
         self.customers = [customer]
     }
 
-    public func all() -> [Customer] {
+    open func all() -> [Customer] {
         return customers
     }
 
-    public func create(customer: Customer) -> Customer {
+    open func create(_ customer: Customer) -> Customer {
         customers.append(customer)
         return customer
     }

@@ -10,7 +10,7 @@ class CreateCustomerInputPresenterApp: CreateCustomerInputPresenter {
         self.newCustomerViewController = newCustomerViewController
     }
 
-    func createCustomer(createCustomerOutputPresenter: CreateCustomerOutputPresenter) {
+    func createCustomer(_ createCustomerOutputPresenter: CreateCustomerOutputPresenter) {
         let interactor = CreateCustomerInteractor(
             customerRepository: customerRepositoryInMemory,
             createCustomerOutputPresenter: createCustomerOutputPresenter)

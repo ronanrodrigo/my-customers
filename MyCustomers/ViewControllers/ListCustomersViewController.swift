@@ -16,14 +16,14 @@ class ListCustomersViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         configureDataSource()
         tableView.reloadData()
     }
 
     // MARK: Setups
 
-    private func configureDataSource() {
+    fileprivate func configureDataSource() {
         customersDataSource = ListCustomersDataSource()
         if let customersDataSource = customersDataSource {
             tableView.dataSource = customersDataSource

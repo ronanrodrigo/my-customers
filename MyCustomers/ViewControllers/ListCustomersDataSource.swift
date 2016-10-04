@@ -19,23 +19,23 @@ class ListCustomersDataSource: NSObject, UITableViewDataSource, ListCustomersOut
 
     // MARK: UITableViewDataSource
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return customers.count
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: cellIdentifier)
-        if let reuseCell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: cellIdentifier)
+        if let reuseCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) {
             cell = reuseCell
         }
-        let customer = customers[indexPath.row]
+        let customer = customers[(indexPath as NSIndexPath).row]
         cell.show(customer)
         return cell
     }
 
     // MARK: ListCustomersOutputPresenter
 
-    func list(customers: [Customer]) {
+    func list(_ customers: [Customer]) {
         self.customers = customers
     }
 

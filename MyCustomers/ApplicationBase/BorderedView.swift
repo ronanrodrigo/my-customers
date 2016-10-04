@@ -3,7 +3,7 @@ import QuartzCore
 
 @IBDesignable class BorderedView: UIView {
 
-    @IBInspectable var borderColor: UIColor = UIColor.whiteColor() {
+    @IBInspectable var borderColor: UIColor = UIColor.white {
         didSet {
             configureView()
         }
@@ -31,20 +31,20 @@ import QuartzCore
         configureView()
     }
 
-    private func configureView() {
+    fileprivate func configureView() {
         let borderBottom = UIView()
         addSubview(borderBottom)
 
         borderBottom.backgroundColor = borderColor
 
         let borderViewLeading = NSLayoutConstraint(
-            item: borderBottom, attribute: .Leading, relatedBy: .Equal, toItem: self, attribute: .Leading, multiplier: 1, constant: borderMargin)
+            item: borderBottom, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1, constant: borderMargin)
         let borderViewTrailing = NSLayoutConstraint(
-            item: borderBottom, attribute: .Trailing, relatedBy: .Equal, toItem: self, attribute: .Trailing, multiplier: 1, constant: 0)
+            item: borderBottom, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: 0)
         let borderViewHeight = NSLayoutConstraint(
-            item: borderBottom, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: borderWidth/2)
+            item: borderBottom, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: borderWidth/2)
         let borderViewBottom = NSLayoutConstraint(
-            item: borderBottom, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1, constant: 0)
+            item: borderBottom, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0)
 
         addConstraints([borderViewLeading, borderViewTrailing, borderViewHeight, borderViewBottom])
         borderBottom.translatesAutoresizingMaskIntoConstraints = false
