@@ -14,7 +14,7 @@ class CreateCustomerInputPresenterApp: CreateCustomerInputPresenter {
 
     func createCustomer() {
         CreateCustomerInteractor(
-            customerRepository: customerRepositoryInMemory,
+            customerRepository: customerRepositoryStore,
             createCustomerOutputPresenter: createCustomerOutputPresenter
         ).create(
             customer: generateCustomerEntity()

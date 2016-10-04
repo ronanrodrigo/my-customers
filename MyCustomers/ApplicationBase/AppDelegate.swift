@@ -1,7 +1,7 @@
 import UIKit
 import MyCustomersCore
 
-let customerRepositoryInMemory = CustomerRepositoryInMemory()
+let customerRepositoryStore = CustomerRepositoryStore()
 var customersAppRouter: CustomersRouterApp?
 
 @UIApplicationMain

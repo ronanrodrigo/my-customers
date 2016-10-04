@@ -13,8 +13,7 @@ class ListCustomersDataSource: NSObject, UITableViewDataSource, ListCustomersOut
 
     override init() {
         super.init()
-        let customerRepository = customerRepositoryInMemory
-        ListCustomersInteractor(listCustomersOutputPresenter: self, customerRepository: customerRepository).list()
+        ListCustomersInteractor(listCustomersOutputPresenter: self, customerRepository: customerRepositoryStore).list()
     }
 
     // MARK: UITableViewDataSource
@@ -24,12 +23,9 @@ class ListCustomersDataSource: NSObject, UITableViewDataSource, ListCustomersOut
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: cellIdentifier)
-        if let reuseCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) {
-            cell = reuseCell
-        }
-        let customer = customers[(indexPath as NSIndexPath).row]
-        cell.show(customer: customer)
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) ??
+            UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: cellIdentifier)
+        cell.show(customer: customers[indexPath.row])
         return cell
     }
 

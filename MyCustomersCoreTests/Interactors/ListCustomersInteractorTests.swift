@@ -8,7 +8,7 @@ class ListCustomersInteractorTests: XCTestCase {
     var listCustomersOutputPresenter: ListCustomersOutputPresenterMock!
 
     override func setUp() {
-        customerRepository = CustomerRepositoryInMemory()
+        customerRepository = CustomerRepositoryStore()
         listCustomersOutputPresenter = ListCustomersOutputPresenterMock()
         listCustomersInteractor = ListCustomersInteractor(
             listCustomersOutputPresenter: listCustomersOutputPresenter,

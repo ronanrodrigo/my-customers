@@ -8,7 +8,7 @@ class ListCustomersViewControllerTests: XCTestCase {
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
-        customersRepository = CustomerRepositoryInMemory()
+        customersRepository = CustomerRepositoryStore()
         XCUIApplication().launch()
     }
 

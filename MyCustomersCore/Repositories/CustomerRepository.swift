@@ -5,7 +5,7 @@ public protocol CustomerRepository {
     func create(customer: Customer)
 }
 
-open class CustomerRepositoryInMemory: CustomerRepository {
+open class CustomerRepositoryStore: CustomerRepository {
 
     var customers: [Customer]
 

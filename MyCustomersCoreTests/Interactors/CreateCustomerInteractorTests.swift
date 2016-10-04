@@ -3,12 +3,12 @@ import XCTest
 
 class CreateCustomerInteractorTests: XCTestCase {
 
-    var customersRespository: CustomerRepositoryInMemory!
+    var customersRespository: CustomerRepositoryStore!
     var createCustomerOutputPresenter: CreateCustomerOutputPresenterMock!
     var createCustomerInteractor: CreateCustomerInteractor!
 
     override func setUp() {
-        customersRespository = CustomerRepositoryInMemory()
+        customersRespository = CustomerRepositoryStore()
         createCustomerOutputPresenter = CreateCustomerOutputPresenterMock()
         createCustomerInteractor = CreateCustomerInteractor(
             customerRepository: customersRespository,
