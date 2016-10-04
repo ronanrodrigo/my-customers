@@ -10,8 +10,8 @@ public struct CreateCustomerInteractor {
         self.createCustomerOutputPresenter = createCustomerOutputPresenter
     }
 
-    public func create(_ customer: Customer) {
-        customerRepository.create(customer)
+    public func create(customer: Customer) {
+        customerRepository.create(customer: customer)
         createCustomerOutputPresenter.show()
     }
 

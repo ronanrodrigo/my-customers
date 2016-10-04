@@ -4,25 +4,27 @@ import MyCustomersCore
 
 class CreateCustomerInputPresenterApp: CreateCustomerInputPresenter {
 
-    var newCustomerViewController: NewCustomerViewController
+    var newCustomerForm: NewCustomerForm
+    var createCustomerOutputPresenter: CreateCustomerOutputPresenterApp
 
-    init(newCustomerViewController: NewCustomerViewController) {
-        self.newCustomerViewController = newCustomerViewController
+    init(newCustomerForm: NewCustomerForm) {
+        self.newCustomerForm = newCustomerForm
+        createCustomerOutputPresenter = CreateCustomerOutputPresenterApp()
     }
 
-    func createCustomer(_ createCustomerOutputPresenter: CreateCustomerOutputPresenter) {
+    func createCustomer() {
         let interactor = CreateCustomerInteractor(
             customerRepository: customerRepositoryInMemory,
             createCustomerOutputPresenter: createCustomerOutputPresenter)
-        interactor.create(generateCustomerEntity())
+        interactor.create(customer: generateCustomerEntity())
     }
 
     func generateCustomerEntity() -> Customer {
         return CustomerEntity(
-            name: newCustomerViewController.name.text,
-            phone: newCustomerViewController.phone.text,
-            email: newCustomerViewController.email.text,
-            address: newCustomerViewController.address.text)
+            name: newCustomerForm.enteredName,
+            phone: newCustomerForm.enteredPhone,
+            email: newCustomerForm.enteredEmail,
+            address: newCustomerForm.enteredAddress)
     }
 
 }

@@ -2,7 +2,7 @@ import Foundation
 
 public protocol CustomerRepository {
     func all() -> [Customer]
-    func create(_ customer: Customer) -> Customer
+    func create(customer: Customer)
 }
 
 open class CustomerRepositoryInMemory: CustomerRepository {
@@ -19,9 +19,8 @@ open class CustomerRepositoryInMemory: CustomerRepository {
         return customers
     }
 
-    open func create(_ customer: Customer) -> Customer {
+    open func create(customer: Customer) {
         customers.append(customer)
-        return customer
     }
 
 }

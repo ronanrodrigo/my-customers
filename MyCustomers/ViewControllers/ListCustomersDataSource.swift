@@ -29,7 +29,7 @@ class ListCustomersDataSource: NSObject, UITableViewDataSource, ListCustomersOut
             cell = reuseCell
         }
         let customer = customers[(indexPath as NSIndexPath).row]
-        cell.show(customer)
+        cell.show(customer: customer)
         return cell
     }
 
