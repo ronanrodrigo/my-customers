@@ -2,6 +2,9 @@
 engines:
   tailor:
     enabled: true
+ignore:
+  - "MyCustomersCoreTests"
+  - "MyCustomersUITests"
 ratings:
   paths:
   - "**.swift"
