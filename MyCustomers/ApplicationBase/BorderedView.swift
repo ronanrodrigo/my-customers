@@ -42,7 +42,8 @@ import QuartzCore
         let borderViewTrailing = NSLayoutConstraint(
             item: borderBottom, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: 0)
         let borderViewHeight = NSLayoutConstraint(
-            item: borderBottom, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: borderWidth/2)
+            item: borderBottom, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1,
+            constant: borderWidth/2)
         let borderViewBottom = NSLayoutConstraint(
             item: borderBottom, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0)
 
